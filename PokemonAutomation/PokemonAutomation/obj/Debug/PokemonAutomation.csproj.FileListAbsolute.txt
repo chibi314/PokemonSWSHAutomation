@@ -11,8 +11,8 @@ C:\Users\chibi\Documents\PokemonAutomation\PokemonAutomation\PokemonAutomation\b
 C:\Users\chibi\Documents\PokemonAutomation\PokemonAutomation\PokemonAutomation\bin\Debug\PokemonAutomation.exe
 C:\Users\chibi\Documents\PokemonAutomation\PokemonAutomation\PokemonAutomation\bin\Debug\PokemonAutomation.pdb
 C:\Users\chibi\Documents\PokemonAutomation\PokemonAutomation\PokemonAutomation\obj\Debug\PokemonAutomation.csprojAssemblyReference.cache
-C:\Users\chibi\Documents\PokemonAutomation\PokemonAutomation\PokemonAutomation\obj\Debug\PokemonAutomation.Form1.resources
 C:\Users\chibi\Documents\PokemonAutomation\PokemonAutomation\PokemonAutomation\obj\Debug\PokemonAutomation.Properties.Resources.resources
 C:\Users\chibi\Documents\PokemonAutomation\PokemonAutomation\PokemonAutomation\obj\Debug\PokemonAutomation.csproj.GenerateResource.cache
 C:\Users\chibi\Documents\PokemonAutomation\PokemonAutomation\PokemonAutomation\obj\Debug\PokemonAutomation.exe
 C:\Users\chibi\Documents\PokemonAutomation\PokemonAutomation\PokemonAutomation\obj\Debug\PokemonAutomation.pdb
+C:\Users\chibi\Documents\PokemonAutomation\PokemonAutomation\PokemonAutomation\obj\Debug\PokemonAutomation.PokemonAutomation.resources

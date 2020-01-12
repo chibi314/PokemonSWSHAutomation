@@ -1,0 +1,9 @@
+C:\Users\chibi\Documents\PokemonAutomation\PokemonAutomation\PokemonAutomation\bin\Release\PokemonAutomation.exe.config
+C:\Users\chibi\Documents\PokemonAutomation\PokemonAutomation\PokemonAutomation\bin\Release\PokemonAutomation.exe
+C:\Users\chibi\Documents\PokemonAutomation\PokemonAutomation\PokemonAutomation\bin\Release\PokemonAutomation.pdb
+C:\Users\chibi\Documents\PokemonAutomation\PokemonAutomation\PokemonAutomation\obj\Release\PokemonAutomation.csprojAssemblyReference.cache
+C:\Users\chibi\Documents\PokemonAutomation\PokemonAutomation\PokemonAutomation\obj\Release\PokemonAutomation.PokemonAutomation.resources
+C:\Users\chibi\Documents\PokemonAutomation\PokemonAutomation\PokemonAutomation\obj\Release\PokemonAutomation.Properties.Resources.resources
+C:\Users\chibi\Documents\PokemonAutomation\PokemonAutomation\PokemonAutomation\obj\Release\PokemonAutomation.csproj.GenerateResource.cache
+C:\Users\chibi\Documents\PokemonAutomation\PokemonAutomation\PokemonAutomation\obj\Release\PokemonAutomation.exe
+C:\Users\chibi\Documents\PokemonAutomation\PokemonAutomation\PokemonAutomation\obj\Release\PokemonAutomation.pdb

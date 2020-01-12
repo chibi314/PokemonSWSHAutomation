@@ -1,0 +1,50 @@
+#include <SwitchControlLibrary.h>
+
+enum {
+  RIGHT = 0,
+  LEFT,
+  UP,
+  DOWN,
+  A,
+  B,
+  X,
+  Y,
+  R,
+  L,
+  ZR,
+  ZL,
+  RSTICK,
+  LSTICK,
+  RCLICK,
+  LCLICK,
+  HOME,
+  CAPTURE,
+  PLUS,
+  MINUS
+};
+
+enum {
+  UP = 0,
+  DOWN
+};
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(115200); //debug output
+  Serial1.begin(115200);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  if (Serial1.available() > 0) {
+    int button_type = Serial1.read();
+    while (Serial1.available() <= 0) {}
+    int button_command = Serial1.read();
+
+    switch (button_type) {
+      case LEFT:
+        if (button_command == 
+    }
+
+  }
+}
