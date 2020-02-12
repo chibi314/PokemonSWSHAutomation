@@ -78,6 +78,7 @@
             this.CountLabel = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.CheckboxPlusNDays = new System.Windows.Forms.CheckBox();
+            this.CheckboxTournament = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // up
@@ -451,7 +452,7 @@
             // CheckboxLotoID
             // 
             this.CheckboxLotoID.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CheckboxLotoID.Location = new System.Drawing.Point(623, 364);
+            this.CheckboxLotoID.Location = new System.Drawing.Point(623, 343);
             this.CheckboxLotoID.Name = "CheckboxLotoID";
             this.CheckboxLotoID.Size = new System.Drawing.Size(104, 34);
             this.CheckboxLotoID.TabIndex = 36;
@@ -705,6 +706,18 @@
             this.CheckboxPlusNDays.UseVisualStyleBackColor = true;
             this.CheckboxPlusNDays.CheckedChanged += new System.EventHandler(this.CheckboxPlusNDays_CheckedChanged);
             // 
+            // CheckboxTournament
+            // 
+            this.CheckboxTournament.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CheckboxTournament.Location = new System.Drawing.Point(623, 380);
+            this.CheckboxTournament.Name = "CheckboxTournament";
+            this.CheckboxTournament.Size = new System.Drawing.Size(104, 34);
+            this.CheckboxTournament.TabIndex = 36;
+            this.CheckboxTournament.Text = "Tournament Auto";
+            this.CheckboxTournament.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CheckboxTournament.UseVisualStyleBackColor = true;
+            this.CheckboxTournament.CheckedChanged += new System.EventHandler(this.CheckboxTournament_CheckedChanged);
+            // 
             // PokemonAutomation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -724,6 +737,7 @@
             this.Controls.Add(this.CheckboxPlus3Days);
             this.Controls.Add(this.LabelDate);
             this.Controls.Add(this.DayTextbox);
+            this.Controls.Add(this.CheckboxTournament);
             this.Controls.Add(this.CheckboxLotoID);
             this.Controls.Add(this.ButtonCapture);
             this.Controls.Add(this.ButtonHome);
@@ -817,6 +831,7 @@
         private System.Windows.Forms.Label CountLabel;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.CheckBox CheckboxPlusNDays;
+        private System.Windows.Forms.CheckBox CheckboxTournament;
     }
 }
 

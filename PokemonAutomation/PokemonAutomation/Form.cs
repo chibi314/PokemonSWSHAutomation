@@ -348,6 +348,18 @@ namespace PokemonAutomation
                 serialPort.Write(data, 0, 3);
             }
         }
+        private void moveStick(ButtonType button, byte x_stick, byte y_stick)
+        {
+            if (serialPort.IsOpen)
+            {
+                Byte[] data = new byte[3];
+                data[0] = (Byte)button;
+                data[1] = x_stick;
+                data[2] = y_stick;
+
+                serialPort.Write(data, 0, 3);
+            }
+        }
         private void releaseStick(ButtonType button)
         {
             if (serialPort.IsOpen)
@@ -1037,6 +1049,55 @@ namespace PokemonAutomation
                 {
                 }
                 CheckboxLotoID.Checked = false;
+            }
+            else
+            {
+                token_source.Cancel();
+            }
+            DayComboBox.Enabled = true;
+        }
+
+        private async void CheckboxTournament_CheckedChanged(object sender, EventArgs e)
+        {
+            DayComboBox.Enabled = false;
+            if (CheckboxTournament.Checked)
+            {
+                try
+                {
+                    token_source = new CancellationTokenSource();
+                    cancel_token = token_source.Token;
+
+                    await Task.Run(async () =>
+                    {
+                        while (true)
+                        {
+                            if (cancel_token.IsCancellationRequested)
+                            {
+                                releaseStick(ButtonType.LSTICK);
+                                return;
+                            }
+
+                            moveStick(ButtonType.LSTICK, (byte)160, (byte)0);
+                            await Task.Delay(500);
+                            for (int i = 0; i < 15; i++)
+                            {
+                                pressButton(ButtonType.A);
+                                await Task.Delay(100);
+                                releaseButton(ButtonType.A);
+                                await Task.Delay(900);
+                            }
+                            pressButton(ButtonType.B);
+                            await Task.Delay(100);
+                            releaseButton(ButtonType.B);
+                            await Task.Delay(900);
+                        }
+                    }, cancel_token);
+
+                }
+                catch (TaskCanceledException)
+                {
+                }
+                CheckboxTournament.Checked = false;
             }
             else
             {
