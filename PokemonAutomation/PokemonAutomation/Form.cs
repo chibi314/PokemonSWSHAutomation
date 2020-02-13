@@ -1057,6 +1057,44 @@ namespace PokemonAutomation
             DayComboBox.Enabled = true;
         }
 
+        private async void CheckboxRapidA_CheckedChanged(object sender, EventArgs e)
+        {
+            DayComboBox.Enabled = false;
+            if (CheckboxRapidA.Checked)
+            {
+                try
+                {
+                    token_source = new CancellationTokenSource();
+                    cancel_token = token_source.Token;
+
+                    await Task.Run(async () =>
+                    {
+                        while (true)
+                        {
+                            if (cancel_token.IsCancellationRequested)
+                            {
+                                return;
+                            }
+                            pressButton(ButtonType.A);
+                            await Task.Delay(100);
+                            releaseButton(ButtonType.A);
+                            await Task.Delay(900);
+                        }
+                    }, cancel_token);
+
+                }
+                catch (TaskCanceledException)
+                {
+                }
+                CheckboxLotoID.Checked = false;
+            }
+            else
+            {
+                token_source.Cancel();
+            }
+            DayComboBox.Enabled = true;
+        }
+
         private async void CheckboxTournament_CheckedChanged(object sender, EventArgs e)
         {
             DayComboBox.Enabled = false;
@@ -1090,6 +1128,97 @@ namespace PokemonAutomation
                             await Task.Delay(100);
                             releaseButton(ButtonType.B);
                             await Task.Delay(900);
+                        }
+                    }, cancel_token);
+
+                }
+                catch (TaskCanceledException)
+                {
+                }
+                CheckboxTournament.Checked = false;
+            }
+            else
+            {
+                token_source.Cancel();
+            }
+            DayComboBox.Enabled = true;
+        }
+
+        private async void CheckboxTowerAuto_CheckedChanged(object sender, EventArgs e)
+        {
+            DayComboBox.Enabled = false;
+            if (CheckboxTowerAuto.Checked)
+            {
+                try
+                {
+                    token_source = new CancellationTokenSource();
+                    cancel_token = token_source.Token;
+
+                    await Task.Run(async () =>
+                    {
+                        while (true)
+                        {
+                            if (cancel_token.IsCancellationRequested)
+                            {
+                                releaseStick(ButtonType.LSTICK);
+                                return;
+                            }
+                            pressButton(ButtonType.ZL);
+                            await Task.Delay(100);
+                            releaseButton(ButtonType.ZL);
+                            await Task.Delay(2900);
+                            pressButton(ButtonType.A);
+                            await Task.Delay(100);
+                            releaseButton(ButtonType.A);
+                            await Task.Delay(1400);
+                            pressButton(ButtonType.A);
+                            await Task.Delay(100);
+                            releaseButton(ButtonType.A);
+                            await Task.Delay(1400);
+                            pressButton(ButtonType.B);
+                            await Task.Delay(100);
+                            releaseButton(ButtonType.B);
+                            await Task.Delay(1400);
+                            pressButton(ButtonType.UP);
+                            await Task.Delay(100);
+                            releaseButton(ButtonType.UP);
+                            await Task.Delay(1400);
+                            pressButton(ButtonType.ZL);
+                            await Task.Delay(100);
+                            releaseButton(ButtonType.ZL);
+                            await Task.Delay(2900);
+                            pressButton(ButtonType.A);
+                            await Task.Delay(100);
+                            releaseButton(ButtonType.A);
+                            await Task.Delay(1400);
+                            pressButton(ButtonType.ZL);
+                            await Task.Delay(100);
+                            releaseButton(ButtonType.ZL);
+                            await Task.Delay(2900);
+                            pressButton(ButtonType.A);
+                            await Task.Delay(100);
+                            releaseButton(ButtonType.A);
+                            await Task.Delay(1400);
+                            pressButton(ButtonType.UP);
+                            await Task.Delay(100);
+                            releaseButton(ButtonType.UP);
+                            await Task.Delay(1400);
+                            pressButton(ButtonType.ZL);
+                            await Task.Delay(100);
+                            releaseButton(ButtonType.ZL);
+                            await Task.Delay(2900);
+                            pressButton(ButtonType.A);
+                            await Task.Delay(100);
+                            releaseButton(ButtonType.A);
+                            await Task.Delay(1400);
+                            pressButton(ButtonType.UP);
+                            await Task.Delay(100);
+                            releaseButton(ButtonType.UP);
+                            await Task.Delay(1400);
+                            pressButton(ButtonType.ZL);
+                            await Task.Delay(100);
+                            releaseButton(ButtonType.ZL);
+                            await Task.Delay(2900);
                         }
                     }, cancel_token);
 
