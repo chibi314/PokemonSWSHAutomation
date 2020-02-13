@@ -78,13 +78,17 @@
             this.CountLabel = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.CheckboxPlusNDays = new System.Windows.Forms.CheckBox();
+            this.CheckboxTournament = new System.Windows.Forms.CheckBox();
+            this.CheckboxRapidA = new System.Windows.Forms.CheckBox();
+            this.CheckboxTowerAuto = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // up
             // 
-            this.up.Location = new System.Drawing.Point(106, 296);
+            this.up.Location = new System.Drawing.Point(141, 370);
+            this.up.Margin = new System.Windows.Forms.Padding(4);
             this.up.Name = "up";
-            this.up.Size = new System.Drawing.Size(75, 23);
+            this.up.Size = new System.Drawing.Size(100, 29);
             this.up.TabIndex = 0;
             this.up.Text = "↑";
             this.up.UseVisualStyleBackColor = true;
@@ -99,9 +103,10 @@
             // 
             // down
             // 
-            this.down.Location = new System.Drawing.Point(106, 354);
+            this.down.Location = new System.Drawing.Point(141, 442);
+            this.down.Margin = new System.Windows.Forms.Padding(4);
             this.down.Name = "down";
-            this.down.Size = new System.Drawing.Size(75, 23);
+            this.down.Size = new System.Drawing.Size(100, 29);
             this.down.TabIndex = 2;
             this.down.Text = "↓";
             this.down.UseVisualStyleBackColor = true;
@@ -110,9 +115,10 @@
             // 
             // left
             // 
-            this.left.Location = new System.Drawing.Point(25, 325);
+            this.left.Location = new System.Drawing.Point(33, 406);
+            this.left.Margin = new System.Windows.Forms.Padding(4);
             this.left.Name = "left";
-            this.left.Size = new System.Drawing.Size(75, 23);
+            this.left.Size = new System.Drawing.Size(100, 29);
             this.left.TabIndex = 3;
             this.left.Text = "←";
             this.left.UseVisualStyleBackColor = true;
@@ -121,9 +127,10 @@
             // 
             // right
             // 
-            this.right.Location = new System.Drawing.Point(187, 325);
+            this.right.Location = new System.Drawing.Point(249, 406);
+            this.right.Margin = new System.Windows.Forms.Padding(4);
             this.right.Name = "right";
-            this.right.Size = new System.Drawing.Size(75, 23);
+            this.right.Size = new System.Drawing.Size(100, 29);
             this.right.TabIndex = 4;
             this.right.Text = "→";
             this.right.UseVisualStyleBackColor = true;
@@ -133,18 +140,20 @@
             // comPortComboBox
             // 
             this.comPortComboBox.FormattingEnabled = true;
-            this.comPortComboBox.Location = new System.Drawing.Point(25, 24);
+            this.comPortComboBox.Location = new System.Drawing.Point(33, 30);
+            this.comPortComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.comPortComboBox.Name = "comPortComboBox";
-            this.comPortComboBox.Size = new System.Drawing.Size(121, 20);
+            this.comPortComboBox.Size = new System.Drawing.Size(160, 23);
             this.comPortComboBox.TabIndex = 5;
             this.comPortComboBox.SelectedIndexChanged += new System.EventHandler(this.comPortComboBox_SelectedIndexChanged);
             this.comPortComboBox.Click += new System.EventHandler(this.comPortComboBox_Click);
             // 
             // ButtonZR
             // 
-            this.ButtonZR.Location = new System.Drawing.Point(452, 72);
+            this.ButtonZR.Location = new System.Drawing.Point(603, 90);
+            this.ButtonZR.Margin = new System.Windows.Forms.Padding(4);
             this.ButtonZR.Name = "ButtonZR";
-            this.ButtonZR.Size = new System.Drawing.Size(75, 23);
+            this.ButtonZR.Size = new System.Drawing.Size(100, 29);
             this.ButtonZR.TabIndex = 7;
             this.ButtonZR.Text = "ZR";
             this.ButtonZR.UseVisualStyleBackColor = true;
@@ -153,9 +162,10 @@
             // 
             // ButtonA
             // 
-            this.ButtonA.Location = new System.Drawing.Point(452, 196);
+            this.ButtonA.Location = new System.Drawing.Point(603, 245);
+            this.ButtonA.Margin = new System.Windows.Forms.Padding(4);
             this.ButtonA.Name = "ButtonA";
-            this.ButtonA.Size = new System.Drawing.Size(75, 23);
+            this.ButtonA.Size = new System.Drawing.Size(100, 29);
             this.ButtonA.TabIndex = 8;
             this.ButtonA.Text = "A";
             this.ButtonA.UseVisualStyleBackColor = true;
@@ -164,9 +174,10 @@
             // 
             // ButtonB
             // 
-            this.ButtonB.Location = new System.Drawing.Point(371, 219);
+            this.ButtonB.Location = new System.Drawing.Point(495, 274);
+            this.ButtonB.Margin = new System.Windows.Forms.Padding(4);
             this.ButtonB.Name = "ButtonB";
-            this.ButtonB.Size = new System.Drawing.Size(75, 23);
+            this.ButtonB.Size = new System.Drawing.Size(100, 29);
             this.ButtonB.TabIndex = 9;
             this.ButtonB.Text = "B";
             this.ButtonB.UseVisualStyleBackColor = true;
@@ -175,9 +186,10 @@
             // 
             // ButtonY
             // 
-            this.ButtonY.Location = new System.Drawing.Point(290, 196);
+            this.ButtonY.Location = new System.Drawing.Point(387, 245);
+            this.ButtonY.Margin = new System.Windows.Forms.Padding(4);
             this.ButtonY.Name = "ButtonY";
-            this.ButtonY.Size = new System.Drawing.Size(75, 23);
+            this.ButtonY.Size = new System.Drawing.Size(100, 29);
             this.ButtonY.TabIndex = 10;
             this.ButtonY.Text = "Y";
             this.ButtonY.UseVisualStyleBackColor = true;
@@ -186,9 +198,10 @@
             // 
             // ButtonX
             // 
-            this.ButtonX.Location = new System.Drawing.Point(371, 173);
+            this.ButtonX.Location = new System.Drawing.Point(495, 216);
+            this.ButtonX.Margin = new System.Windows.Forms.Padding(4);
             this.ButtonX.Name = "ButtonX";
-            this.ButtonX.Size = new System.Drawing.Size(75, 23);
+            this.ButtonX.Size = new System.Drawing.Size(100, 29);
             this.ButtonX.TabIndex = 11;
             this.ButtonX.Text = "X";
             this.ButtonX.UseVisualStyleBackColor = true;
@@ -197,9 +210,10 @@
             // 
             // LeftN
             // 
-            this.LeftN.Location = new System.Drawing.Point(106, 167);
+            this.LeftN.Location = new System.Drawing.Point(141, 209);
+            this.LeftN.Margin = new System.Windows.Forms.Padding(4);
             this.LeftN.Name = "LeftN";
-            this.LeftN.Size = new System.Drawing.Size(75, 23);
+            this.LeftN.Size = new System.Drawing.Size(100, 29);
             this.LeftN.TabIndex = 12;
             this.LeftN.Text = "↑";
             this.LeftN.UseVisualStyleBackColor = true;
@@ -208,9 +222,10 @@
             // 
             // LeftS
             // 
-            this.LeftS.Location = new System.Drawing.Point(106, 225);
+            this.LeftS.Location = new System.Drawing.Point(141, 281);
+            this.LeftS.Margin = new System.Windows.Forms.Padding(4);
             this.LeftS.Name = "LeftS";
-            this.LeftS.Size = new System.Drawing.Size(75, 23);
+            this.LeftS.Size = new System.Drawing.Size(100, 29);
             this.LeftS.TabIndex = 14;
             this.LeftS.Text = "↓";
             this.LeftS.UseVisualStyleBackColor = true;
@@ -219,9 +234,10 @@
             // 
             // LeftE
             // 
-            this.LeftE.Location = new System.Drawing.Point(187, 196);
+            this.LeftE.Location = new System.Drawing.Point(249, 245);
+            this.LeftE.Margin = new System.Windows.Forms.Padding(4);
             this.LeftE.Name = "LeftE";
-            this.LeftE.Size = new System.Drawing.Size(75, 23);
+            this.LeftE.Size = new System.Drawing.Size(100, 29);
             this.LeftE.TabIndex = 15;
             this.LeftE.Text = "→";
             this.LeftE.UseVisualStyleBackColor = true;
@@ -230,9 +246,10 @@
             // 
             // LeftNE
             // 
-            this.LeftNE.Location = new System.Drawing.Point(187, 167);
+            this.LeftNE.Location = new System.Drawing.Point(249, 209);
+            this.LeftNE.Margin = new System.Windows.Forms.Padding(4);
             this.LeftNE.Name = "LeftNE";
-            this.LeftNE.Size = new System.Drawing.Size(75, 23);
+            this.LeftNE.Size = new System.Drawing.Size(100, 29);
             this.LeftNE.TabIndex = 16;
             this.LeftNE.Text = "↗";
             this.LeftNE.UseVisualStyleBackColor = true;
@@ -241,9 +258,10 @@
             // 
             // LeftSE
             // 
-            this.LeftSE.Location = new System.Drawing.Point(187, 225);
+            this.LeftSE.Location = new System.Drawing.Point(249, 281);
+            this.LeftSE.Margin = new System.Windows.Forms.Padding(4);
             this.LeftSE.Name = "LeftSE";
-            this.LeftSE.Size = new System.Drawing.Size(75, 23);
+            this.LeftSE.Size = new System.Drawing.Size(100, 29);
             this.LeftSE.TabIndex = 17;
             this.LeftSE.Text = "↘";
             this.LeftSE.UseVisualStyleBackColor = true;
@@ -252,9 +270,10 @@
             // 
             // LeftW
             // 
-            this.LeftW.Location = new System.Drawing.Point(25, 196);
+            this.LeftW.Location = new System.Drawing.Point(33, 245);
+            this.LeftW.Margin = new System.Windows.Forms.Padding(4);
             this.LeftW.Name = "LeftW";
-            this.LeftW.Size = new System.Drawing.Size(75, 23);
+            this.LeftW.Size = new System.Drawing.Size(100, 29);
             this.LeftW.TabIndex = 18;
             this.LeftW.Text = "←";
             this.LeftW.UseVisualStyleBackColor = true;
@@ -263,9 +282,10 @@
             // 
             // LeftSW
             // 
-            this.LeftSW.Location = new System.Drawing.Point(25, 225);
+            this.LeftSW.Location = new System.Drawing.Point(33, 281);
+            this.LeftSW.Margin = new System.Windows.Forms.Padding(4);
             this.LeftSW.Name = "LeftSW";
-            this.LeftSW.Size = new System.Drawing.Size(75, 23);
+            this.LeftSW.Size = new System.Drawing.Size(100, 29);
             this.LeftSW.TabIndex = 19;
             this.LeftSW.Text = "↙";
             this.LeftSW.UseVisualStyleBackColor = true;
@@ -274,9 +294,10 @@
             // 
             // LeftNW
             // 
-            this.LeftNW.Location = new System.Drawing.Point(25, 167);
+            this.LeftNW.Location = new System.Drawing.Point(33, 209);
+            this.LeftNW.Margin = new System.Windows.Forms.Padding(4);
             this.LeftNW.Name = "LeftNW";
-            this.LeftNW.Size = new System.Drawing.Size(75, 23);
+            this.LeftNW.Size = new System.Drawing.Size(100, 29);
             this.LeftNW.TabIndex = 20;
             this.LeftNW.Text = "↖";
             this.LeftNW.UseVisualStyleBackColor = true;
@@ -285,9 +306,10 @@
             // 
             // RightNW
             // 
-            this.RightNW.Location = new System.Drawing.Point(290, 296);
+            this.RightNW.Location = new System.Drawing.Point(387, 370);
+            this.RightNW.Margin = new System.Windows.Forms.Padding(4);
             this.RightNW.Name = "RightNW";
-            this.RightNW.Size = new System.Drawing.Size(75, 23);
+            this.RightNW.Size = new System.Drawing.Size(100, 29);
             this.RightNW.TabIndex = 28;
             this.RightNW.Text = "↖";
             this.RightNW.UseVisualStyleBackColor = true;
@@ -296,9 +318,10 @@
             // 
             // RightSW
             // 
-            this.RightSW.Location = new System.Drawing.Point(290, 354);
+            this.RightSW.Location = new System.Drawing.Point(387, 442);
+            this.RightSW.Margin = new System.Windows.Forms.Padding(4);
             this.RightSW.Name = "RightSW";
-            this.RightSW.Size = new System.Drawing.Size(75, 23);
+            this.RightSW.Size = new System.Drawing.Size(100, 29);
             this.RightSW.TabIndex = 27;
             this.RightSW.Text = "↙";
             this.RightSW.UseVisualStyleBackColor = true;
@@ -307,9 +330,10 @@
             // 
             // RightW
             // 
-            this.RightW.Location = new System.Drawing.Point(290, 325);
+            this.RightW.Location = new System.Drawing.Point(387, 406);
+            this.RightW.Margin = new System.Windows.Forms.Padding(4);
             this.RightW.Name = "RightW";
-            this.RightW.Size = new System.Drawing.Size(75, 23);
+            this.RightW.Size = new System.Drawing.Size(100, 29);
             this.RightW.TabIndex = 26;
             this.RightW.Text = "←";
             this.RightW.UseVisualStyleBackColor = true;
@@ -318,9 +342,10 @@
             // 
             // RightSE
             // 
-            this.RightSE.Location = new System.Drawing.Point(454, 354);
+            this.RightSE.Location = new System.Drawing.Point(605, 442);
+            this.RightSE.Margin = new System.Windows.Forms.Padding(4);
             this.RightSE.Name = "RightSE";
-            this.RightSE.Size = new System.Drawing.Size(75, 23);
+            this.RightSE.Size = new System.Drawing.Size(100, 29);
             this.RightSE.TabIndex = 25;
             this.RightSE.Text = "↘";
             this.RightSE.UseVisualStyleBackColor = true;
@@ -329,9 +354,10 @@
             // 
             // RightNE
             // 
-            this.RightNE.Location = new System.Drawing.Point(454, 296);
+            this.RightNE.Location = new System.Drawing.Point(605, 370);
+            this.RightNE.Margin = new System.Windows.Forms.Padding(4);
             this.RightNE.Name = "RightNE";
-            this.RightNE.Size = new System.Drawing.Size(75, 23);
+            this.RightNE.Size = new System.Drawing.Size(100, 29);
             this.RightNE.TabIndex = 24;
             this.RightNE.Text = "↗";
             this.RightNE.UseVisualStyleBackColor = true;
@@ -340,9 +366,10 @@
             // 
             // RightE
             // 
-            this.RightE.Location = new System.Drawing.Point(454, 325);
+            this.RightE.Location = new System.Drawing.Point(605, 406);
+            this.RightE.Margin = new System.Windows.Forms.Padding(4);
             this.RightE.Name = "RightE";
-            this.RightE.Size = new System.Drawing.Size(75, 23);
+            this.RightE.Size = new System.Drawing.Size(100, 29);
             this.RightE.TabIndex = 23;
             this.RightE.Text = "→";
             this.RightE.UseVisualStyleBackColor = true;
@@ -351,9 +378,10 @@
             // 
             // RightS
             // 
-            this.RightS.Location = new System.Drawing.Point(373, 354);
+            this.RightS.Location = new System.Drawing.Point(497, 442);
+            this.RightS.Margin = new System.Windows.Forms.Padding(4);
             this.RightS.Name = "RightS";
-            this.RightS.Size = new System.Drawing.Size(75, 23);
+            this.RightS.Size = new System.Drawing.Size(100, 29);
             this.RightS.TabIndex = 22;
             this.RightS.Text = "↓";
             this.RightS.UseVisualStyleBackColor = true;
@@ -362,9 +390,10 @@
             // 
             // RightN
             // 
-            this.RightN.Location = new System.Drawing.Point(373, 296);
+            this.RightN.Location = new System.Drawing.Point(497, 370);
+            this.RightN.Margin = new System.Windows.Forms.Padding(4);
             this.RightN.Name = "RightN";
-            this.RightN.Size = new System.Drawing.Size(75, 23);
+            this.RightN.Size = new System.Drawing.Size(100, 29);
             this.RightN.TabIndex = 21;
             this.RightN.Text = "↑";
             this.RightN.UseVisualStyleBackColor = true;
@@ -373,9 +402,10 @@
             // 
             // ButtonR
             // 
-            this.ButtonR.Location = new System.Drawing.Point(452, 110);
+            this.ButtonR.Location = new System.Drawing.Point(603, 138);
+            this.ButtonR.Margin = new System.Windows.Forms.Padding(4);
             this.ButtonR.Name = "ButtonR";
-            this.ButtonR.Size = new System.Drawing.Size(75, 23);
+            this.ButtonR.Size = new System.Drawing.Size(100, 29);
             this.ButtonR.TabIndex = 29;
             this.ButtonR.Text = "R";
             this.ButtonR.UseVisualStyleBackColor = true;
@@ -384,9 +414,10 @@
             // 
             // ButtonL
             // 
-            this.ButtonL.Location = new System.Drawing.Point(25, 110);
+            this.ButtonL.Location = new System.Drawing.Point(33, 138);
+            this.ButtonL.Margin = new System.Windows.Forms.Padding(4);
             this.ButtonL.Name = "ButtonL";
-            this.ButtonL.Size = new System.Drawing.Size(75, 23);
+            this.ButtonL.Size = new System.Drawing.Size(100, 29);
             this.ButtonL.TabIndex = 30;
             this.ButtonL.Text = "L";
             this.ButtonL.UseVisualStyleBackColor = true;
@@ -395,9 +426,10 @@
             // 
             // ButtonZL
             // 
-            this.ButtonZL.Location = new System.Drawing.Point(25, 72);
+            this.ButtonZL.Location = new System.Drawing.Point(33, 90);
+            this.ButtonZL.Margin = new System.Windows.Forms.Padding(4);
             this.ButtonZL.Name = "ButtonZL";
-            this.ButtonZL.Size = new System.Drawing.Size(75, 23);
+            this.ButtonZL.Size = new System.Drawing.Size(100, 29);
             this.ButtonZL.TabIndex = 31;
             this.ButtonZL.Text = "ZL";
             this.ButtonZL.UseVisualStyleBackColor = true;
@@ -406,9 +438,10 @@
             // 
             // ButtonMinus
             // 
-            this.ButtonMinus.Location = new System.Drawing.Point(187, 93);
+            this.ButtonMinus.Location = new System.Drawing.Point(249, 116);
+            this.ButtonMinus.Margin = new System.Windows.Forms.Padding(4);
             this.ButtonMinus.Name = "ButtonMinus";
-            this.ButtonMinus.Size = new System.Drawing.Size(75, 23);
+            this.ButtonMinus.Size = new System.Drawing.Size(100, 29);
             this.ButtonMinus.TabIndex = 32;
             this.ButtonMinus.Text = "-";
             this.ButtonMinus.UseVisualStyleBackColor = true;
@@ -417,9 +450,10 @@
             // 
             // ButtonPlus
             // 
-            this.ButtonPlus.Location = new System.Drawing.Point(290, 93);
+            this.ButtonPlus.Location = new System.Drawing.Point(387, 116);
+            this.ButtonPlus.Margin = new System.Windows.Forms.Padding(4);
             this.ButtonPlus.Name = "ButtonPlus";
-            this.ButtonPlus.Size = new System.Drawing.Size(75, 23);
+            this.ButtonPlus.Size = new System.Drawing.Size(100, 29);
             this.ButtonPlus.TabIndex = 33;
             this.ButtonPlus.Text = "+";
             this.ButtonPlus.UseVisualStyleBackColor = true;
@@ -428,9 +462,10 @@
             // 
             // ButtonHome
             // 
-            this.ButtonHome.Location = new System.Drawing.Point(290, 407);
+            this.ButtonHome.Location = new System.Drawing.Point(387, 509);
+            this.ButtonHome.Margin = new System.Windows.Forms.Padding(4);
             this.ButtonHome.Name = "ButtonHome";
-            this.ButtonHome.Size = new System.Drawing.Size(75, 23);
+            this.ButtonHome.Size = new System.Drawing.Size(100, 29);
             this.ButtonHome.TabIndex = 34;
             this.ButtonHome.Text = "Home";
             this.ButtonHome.UseVisualStyleBackColor = true;
@@ -439,9 +474,10 @@
             // 
             // ButtonCapture
             // 
-            this.ButtonCapture.Location = new System.Drawing.Point(187, 407);
+            this.ButtonCapture.Location = new System.Drawing.Point(249, 509);
+            this.ButtonCapture.Margin = new System.Windows.Forms.Padding(4);
             this.ButtonCapture.Name = "ButtonCapture";
-            this.ButtonCapture.Size = new System.Drawing.Size(75, 23);
+            this.ButtonCapture.Size = new System.Drawing.Size(100, 29);
             this.ButtonCapture.TabIndex = 35;
             this.ButtonCapture.Text = "Capture";
             this.ButtonCapture.UseVisualStyleBackColor = true;
@@ -451,9 +487,10 @@
             // CheckboxLotoID
             // 
             this.CheckboxLotoID.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CheckboxLotoID.Location = new System.Drawing.Point(623, 364);
+            this.CheckboxLotoID.Location = new System.Drawing.Point(931, 429);
+            this.CheckboxLotoID.Margin = new System.Windows.Forms.Padding(4);
             this.CheckboxLotoID.Name = "CheckboxLotoID";
-            this.CheckboxLotoID.Size = new System.Drawing.Size(104, 34);
+            this.CheckboxLotoID.Size = new System.Drawing.Size(139, 42);
             this.CheckboxLotoID.TabIndex = 36;
             this.CheckboxLotoID.Text = "Loto ID";
             this.CheckboxLotoID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -462,17 +499,19 @@
             // 
             // DayTextbox
             // 
-            this.DayTextbox.Location = new System.Drawing.Point(577, 264);
+            this.DayTextbox.Location = new System.Drawing.Point(769, 330);
+            this.DayTextbox.Margin = new System.Windows.Forms.Padding(4);
             this.DayTextbox.Name = "DayTextbox";
-            this.DayTextbox.Size = new System.Drawing.Size(104, 19);
+            this.DayTextbox.Size = new System.Drawing.Size(137, 22);
             this.DayTextbox.TabIndex = 40;
             // 
             // LabelDate
             // 
             this.LabelDate.AutoSize = true;
-            this.LabelDate.Location = new System.Drawing.Point(556, 81);
+            this.LabelDate.Location = new System.Drawing.Point(741, 101);
+            this.LabelDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelDate.Name = "LabelDate";
-            this.LabelDate.Size = new System.Drawing.Size(31, 12);
+            this.LabelDate.Size = new System.Drawing.Size(40, 15);
             this.LabelDate.TabIndex = 42;
             this.LabelDate.Text = "Date:";
             this.LabelDate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -480,9 +519,10 @@
             // CheckboxPlus3Days
             // 
             this.CheckboxPlus3Days.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CheckboxPlus3Days.Location = new System.Drawing.Point(623, 159);
+            this.CheckboxPlus3Days.Location = new System.Drawing.Point(831, 199);
+            this.CheckboxPlus3Days.Margin = new System.Windows.Forms.Padding(4);
             this.CheckboxPlus3Days.Name = "CheckboxPlus3Days";
-            this.CheckboxPlus3Days.Size = new System.Drawing.Size(104, 32);
+            this.CheckboxPlus3Days.Size = new System.Drawing.Size(139, 40);
             this.CheckboxPlus3Days.TabIndex = 43;
             this.CheckboxPlus3Days.Text = "+3 Days";
             this.CheckboxPlus3Days.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -492,9 +532,10 @@
             // CheckboxPlus4Days
             // 
             this.CheckboxPlus4Days.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CheckboxPlus4Days.Location = new System.Drawing.Point(623, 206);
+            this.CheckboxPlus4Days.Location = new System.Drawing.Point(831, 258);
+            this.CheckboxPlus4Days.Margin = new System.Windows.Forms.Padding(4);
             this.CheckboxPlus4Days.Name = "CheckboxPlus4Days";
-            this.CheckboxPlus4Days.Size = new System.Drawing.Size(104, 32);
+            this.CheckboxPlus4Days.Size = new System.Drawing.Size(139, 40);
             this.CheckboxPlus4Days.TabIndex = 44;
             this.CheckboxPlus4Days.Text = "+4 Days";
             this.CheckboxPlus4Days.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -504,9 +545,10 @@
             // CheckboxPlus1Day
             // 
             this.CheckboxPlus1Day.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CheckboxPlus1Day.Location = new System.Drawing.Point(623, 110);
+            this.CheckboxPlus1Day.Location = new System.Drawing.Point(831, 138);
+            this.CheckboxPlus1Day.Margin = new System.Windows.Forms.Padding(4);
             this.CheckboxPlus1Day.Name = "CheckboxPlus1Day";
-            this.CheckboxPlus1Day.Size = new System.Drawing.Size(104, 32);
+            this.CheckboxPlus1Day.Size = new System.Drawing.Size(139, 40);
             this.CheckboxPlus1Day.TabIndex = 45;
             this.CheckboxPlus1Day.Text = "+1 Day";
             this.CheckboxPlus1Day.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -578,36 +620,40 @@
             "2058",
             "2059",
             "2060"});
-            this.YearComboBox.Location = new System.Drawing.Point(558, 47);
+            this.YearComboBox.Location = new System.Drawing.Point(744, 59);
+            this.YearComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.YearComboBox.Name = "YearComboBox";
-            this.YearComboBox.Size = new System.Drawing.Size(91, 20);
+            this.YearComboBox.Size = new System.Drawing.Size(120, 23);
             this.YearComboBox.TabIndex = 46;
             this.YearComboBox.Click += new System.EventHandler(this.YearComboBox_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(556, 32);
+            this.label1.Location = new System.Drawing.Point(741, 40);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(28, 12);
+            this.label1.Size = new System.Drawing.Size(36, 15);
             this.label1.TabIndex = 47;
             this.label1.Text = "Year";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(659, 32);
+            this.label2.Location = new System.Drawing.Point(879, 40);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(36, 12);
+            this.label2.Size = new System.Drawing.Size(47, 15);
             this.label2.TabIndex = 48;
             this.label2.Text = "Month";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(735, 32);
+            this.label3.Location = new System.Drawing.Point(980, 40);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(25, 12);
+            this.label3.Size = new System.Drawing.Size(31, 15);
             this.label3.TabIndex = 49;
             this.label3.Text = "Day";
             // 
@@ -627,9 +673,10 @@
             "10",
             "11",
             "12"});
-            this.MonthComboBox.Location = new System.Drawing.Point(661, 47);
+            this.MonthComboBox.Location = new System.Drawing.Point(881, 59);
+            this.MonthComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.MonthComboBox.Name = "MonthComboBox";
-            this.MonthComboBox.Size = new System.Drawing.Size(66, 20);
+            this.MonthComboBox.Size = new System.Drawing.Size(87, 23);
             this.MonthComboBox.TabIndex = 50;
             this.MonthComboBox.Click += new System.EventHandler(this.MonthComboBox_Click);
             // 
@@ -668,9 +715,10 @@
             "29",
             "30",
             "31"});
-            this.DayComboBox.Location = new System.Drawing.Point(737, 47);
+            this.DayComboBox.Location = new System.Drawing.Point(983, 59);
+            this.DayComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.DayComboBox.Name = "DayComboBox";
-            this.DayComboBox.Size = new System.Drawing.Size(66, 20);
+            this.DayComboBox.Size = new System.Drawing.Size(87, 23);
             this.DayComboBox.TabIndex = 51;
             this.DayComboBox.SelectedIndexChanged += new System.EventHandler(this.DayComboBox_SelectedIndexChanged);
             this.DayComboBox.Click += new System.EventHandler(this.DayComboBox_Click);
@@ -678,38 +726,80 @@
             // CountLabel
             // 
             this.CountLabel.AutoSize = true;
-            this.CountLabel.Location = new System.Drawing.Point(575, 296);
+            this.CountLabel.Location = new System.Drawing.Point(767, 370);
+            this.CountLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CountLabel.Name = "CountLabel";
-            this.CountLabel.Size = new System.Drawing.Size(35, 12);
+            this.CountLabel.Size = new System.Drawing.Size(47, 15);
             this.CountLabel.TabIndex = 52;
             this.CountLabel.Text = "count:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(25, 6);
+            this.label4.Location = new System.Drawing.Point(33, 8);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(26, 12);
+            this.label4.Size = new System.Drawing.Size(34, 15);
             this.label4.TabIndex = 53;
             this.label4.Text = "Port";
             // 
             // CheckboxPlusNDays
             // 
             this.CheckboxPlusNDays.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CheckboxPlusNDays.Location = new System.Drawing.Point(687, 257);
+            this.CheckboxPlusNDays.Location = new System.Drawing.Point(916, 321);
+            this.CheckboxPlusNDays.Margin = new System.Windows.Forms.Padding(4);
             this.CheckboxPlusNDays.Name = "CheckboxPlusNDays";
-            this.CheckboxPlusNDays.Size = new System.Drawing.Size(104, 32);
+            this.CheckboxPlusNDays.Size = new System.Drawing.Size(139, 40);
             this.CheckboxPlusNDays.TabIndex = 54;
             this.CheckboxPlusNDays.Text = "+ N Days";
             this.CheckboxPlusNDays.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.CheckboxPlusNDays.UseVisualStyleBackColor = true;
             this.CheckboxPlusNDays.CheckedChanged += new System.EventHandler(this.CheckboxPlusNDays_CheckedChanged);
             // 
+            // CheckboxTournament
+            // 
+            this.CheckboxTournament.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CheckboxTournament.Location = new System.Drawing.Point(784, 479);
+            this.CheckboxTournament.Margin = new System.Windows.Forms.Padding(4);
+            this.CheckboxTournament.Name = "CheckboxTournament";
+            this.CheckboxTournament.Size = new System.Drawing.Size(139, 42);
+            this.CheckboxTournament.TabIndex = 36;
+            this.CheckboxTournament.Text = "Tournament Auto";
+            this.CheckboxTournament.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CheckboxTournament.UseVisualStyleBackColor = true;
+            this.CheckboxTournament.CheckedChanged += new System.EventHandler(this.CheckboxTournament_CheckedChanged);
+            // 
+            // CheckboxRapidA
+            // 
+            this.CheckboxRapidA.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CheckboxRapidA.Location = new System.Drawing.Point(784, 429);
+            this.CheckboxRapidA.Margin = new System.Windows.Forms.Padding(4);
+            this.CheckboxRapidA.Name = "CheckboxRapidA";
+            this.CheckboxRapidA.Size = new System.Drawing.Size(139, 42);
+            this.CheckboxRapidA.TabIndex = 36;
+            this.CheckboxRapidA.Text = "(A) Rapid";
+            this.CheckboxRapidA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CheckboxRapidA.UseVisualStyleBackColor = true;
+            this.CheckboxRapidA.CheckedChanged += new System.EventHandler(this.CheckboxRapidA_CheckedChanged);
+            // 
+            // CheckboxTowerAuto
+            // 
+            this.CheckboxTowerAuto.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CheckboxTowerAuto.Location = new System.Drawing.Point(931, 479);
+            this.CheckboxTowerAuto.Margin = new System.Windows.Forms.Padding(4);
+            this.CheckboxTowerAuto.Name = "CheckboxTowerAuto";
+            this.CheckboxTowerAuto.Size = new System.Drawing.Size(139, 42);
+            this.CheckboxTowerAuto.TabIndex = 36;
+            this.CheckboxTowerAuto.Text = "Tower Auto";
+            this.CheckboxTowerAuto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CheckboxTowerAuto.UseVisualStyleBackColor = true;
+            this.CheckboxTowerAuto.CheckedChanged += new System.EventHandler(this.CheckboxTowerAuto_CheckedChanged);
+            // 
             // PokemonAutomation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(815, 470);
+            this.ClientSize = new System.Drawing.Size(1087, 588);
             this.Controls.Add(this.CheckboxPlusNDays);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.CountLabel);
@@ -724,6 +814,9 @@
             this.Controls.Add(this.CheckboxPlus3Days);
             this.Controls.Add(this.LabelDate);
             this.Controls.Add(this.DayTextbox);
+            this.Controls.Add(this.CheckboxTowerAuto);
+            this.Controls.Add(this.CheckboxTournament);
+            this.Controls.Add(this.CheckboxRapidA);
             this.Controls.Add(this.CheckboxLotoID);
             this.Controls.Add(this.ButtonCapture);
             this.Controls.Add(this.ButtonHome);
@@ -758,6 +851,7 @@
             this.Controls.Add(this.left);
             this.Controls.Add(this.down);
             this.Controls.Add(this.up);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "PokemonAutomation";
             this.Text = "PokemonAutomation";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -817,6 +911,9 @@
         private System.Windows.Forms.Label CountLabel;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.CheckBox CheckboxPlusNDays;
+        private System.Windows.Forms.CheckBox CheckboxTournament;
+        private System.Windows.Forms.CheckBox CheckboxRapidA;
+        private System.Windows.Forms.CheckBox CheckboxTowerAuto;
     }
 }
 
