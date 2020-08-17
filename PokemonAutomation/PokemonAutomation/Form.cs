@@ -1044,5 +1044,41 @@ namespace PokemonAutomation
             }
             DayComboBox.Enabled = true;
         }
+
+        private async void checkBoxWatt_CheckedChanged(object sender, EventArgs e)
+        {
+            DayComboBox.Enabled = false;
+            if (checkBoxWatt.Checked)
+            {
+                try
+                {
+                    token_source = new CancellationTokenSource();
+                    cancel_token = token_source.Token;
+
+                    await Task.Run(async () =>
+                    {
+                        for (; ; )
+                        {
+                            if (cancel_token.IsCancellationRequested)
+                            {
+                                return;
+                            }
+
+                            await increaseDateWithRaidHole();
+                        }
+                    }, cancel_token);
+
+                }
+                catch (System.Threading.Tasks.TaskCanceledException exception)
+                {
+                }
+                checkBoxWatt.Checked = false;
+            }
+            else
+            {
+                token_source.Cancel();
+            }
+            DayComboBox.Enabled = true;
+        }
     }
 }

@@ -78,6 +78,7 @@
             this.CountLabel = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.CheckboxPlusNDays = new System.Windows.Forms.CheckBox();
+            this.checkBoxWatt = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // up
@@ -451,7 +452,7 @@
             // CheckboxLotoID
             // 
             this.CheckboxLotoID.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CheckboxLotoID.Location = new System.Drawing.Point(623, 364);
+            this.CheckboxLotoID.Location = new System.Drawing.Point(623, 354);
             this.CheckboxLotoID.Name = "CheckboxLotoID";
             this.CheckboxLotoID.Size = new System.Drawing.Size(104, 34);
             this.CheckboxLotoID.TabIndex = 36;
@@ -705,11 +706,24 @@
             this.CheckboxPlusNDays.UseVisualStyleBackColor = true;
             this.CheckboxPlusNDays.CheckedChanged += new System.EventHandler(this.CheckboxPlusNDays_CheckedChanged);
             // 
+            // checkBoxWatt
+            // 
+            this.checkBoxWatt.Appearance = System.Windows.Forms.Appearance.Button;
+            this.checkBoxWatt.Location = new System.Drawing.Point(623, 406);
+            this.checkBoxWatt.Name = "checkBoxWatt";
+            this.checkBoxWatt.Size = new System.Drawing.Size(104, 34);
+            this.checkBoxWatt.TabIndex = 55;
+            this.checkBoxWatt.Text = "Watt";
+            this.checkBoxWatt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBoxWatt.UseVisualStyleBackColor = true;
+            this.checkBoxWatt.CheckedChanged += new System.EventHandler(this.checkBoxWatt_CheckedChanged);
+            // 
             // PokemonAutomation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(815, 470);
+            this.Controls.Add(this.checkBoxWatt);
             this.Controls.Add(this.CheckboxPlusNDays);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.CountLabel);
@@ -817,6 +831,7 @@
         private System.Windows.Forms.Label CountLabel;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.CheckBox CheckboxPlusNDays;
+        private System.Windows.Forms.CheckBox checkBoxWatt;
     }
 }
 
